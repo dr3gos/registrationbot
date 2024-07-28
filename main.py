@@ -72,13 +72,13 @@ async def on_ready():
 	keepalive.start()	
 
 # init of ids
-hrid = 1067615240256225370
-shrid = 1091129949768921109
-ocsoid = 1067615254307164193
-wspid = 1067615253128556554
-dotid = 1067615255297015888
-platinumid = 1103113628674166824
-hyperplatid = 1112510328450859089
+hrid = os.getenv('hrid')
+shrid = os.getenv('shrid')
+ocsoid = os.getenv('ocsoid')
+wspid = os.getenv('wspid')
+dotid = os.getenv('dotid')
+platinumid = os.getenv('platinumid')
+hyperplatid = os.getenv('hyperplatid')
 
 @bot.tree.command(name='register', description='Register your Vehicle into the database.')
 @app_commands.describe(plate='License Plate of your vehicle.')
